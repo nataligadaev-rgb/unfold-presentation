@@ -46,7 +46,7 @@ const totalText = computed(() => String(total.value).padStart(2, '0'))
   display: flex;
   align-items: center;
   gap: 5px;
-  font: 400 16px/14px 'Inter Tight', sans-serif;
+  font: 400 16px/14px 'Saans', 'Heebo', sans-serif;
   letter-spacing: -0.32px;
   color: #b4b4b4;
   font-variant-numeric: tabular-nums;

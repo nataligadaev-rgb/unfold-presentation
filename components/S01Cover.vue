@@ -22,7 +22,7 @@
   right: 0;
   top: 475px;
   text-align: center;
-  font: 700 96px/44px 'Inter Tight', sans-serif;
+  font: 700 96px/44px 'Saans', 'Heebo', sans-serif;
   letter-spacing: -1.92px;
 }
 .tag {
@@ -31,7 +31,7 @@
   right: 0;
   top: 587px;
   text-align: center;
-  font: italic 300 36px/44px 'Inter Tight', sans-serif;
+  font: italic 300 36px/44px 'Saans', 'Heebo', sans-serif;
   letter-spacing: -0.72px;
 }
 .bar { position: absolute; left: 932px; top: 650px; }

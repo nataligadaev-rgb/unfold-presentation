@@ -31,7 +31,7 @@
 .kpi { position: absolute; left: 307px; width: 194px; text-align: center; }
 .k1 { top: 340px; }
 .k2 { top: 574px; }
-.n { font: 500 48px/44px 'Inter Tight', sans-serif; letter-spacing: -1.44px; }
+.n { font: 500 48px/44px 'Saans', 'Heebo', sans-serif; letter-spacing: -1.44px; }
 .l { margin-top: 8px !important; font-size: 20px; line-height: 32px; letter-spacing: -0.4px; color: #9b9b9b; }
 .l b { font-weight: 700; }
 .cut { position: absolute; left: 244px; top: 510px; width: 288px; border-top: 1px dashed #6a6a6a; }

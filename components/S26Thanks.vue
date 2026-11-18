@@ -22,7 +22,7 @@
 .hl { position: absolute; left: 1480.6px; top: 321.5px; width: 314.7px; height: 26px; background: #000; mix-blend-mode: overlay; border-radius: 4px; }
 .cur { position: absolute; left: 1648px; top: 339px; width: 32px; height: 32px; animation: cur-in 0.55s var(--ease) 0.5s both; }
 @keyframes cur-in { from { opacity: 0; transform: translate(-30px, -44px); } to { opacity: 1; transform: none; } }
-.title { position: absolute; left: 0; right: 0; top: 475px; text-align: center; font: 700 96px/44px 'Inter Tight', sans-serif; letter-spacing: -1.92px; }
-.tag { position: absolute; left: 0; right: 0; top: 587px; text-align: center; font: italic 300 36px/44px 'Inter Tight', sans-serif; letter-spacing: -0.72px; color: #9b9b9b; }
+.title { position: absolute; left: 0; right: 0; top: 475px; text-align: center; font: 700 96px/44px 'Saans', 'Heebo', sans-serif; letter-spacing: -1.92px; }
+.tag { position: absolute; left: 0; right: 0; top: 587px; text-align: center; font: italic 300 36px/44px 'Saans', 'Heebo', sans-serif; letter-spacing: -0.72px; color: #9b9b9b; }
 .bar { position: absolute; left: 928px; top: 650px; }
 </style>

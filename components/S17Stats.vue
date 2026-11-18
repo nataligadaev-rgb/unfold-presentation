@@ -24,7 +24,7 @@ const stats = [
 <style scoped>
 .wrap { position: absolute; inset: 0; }
 .st { position: absolute; }
-.n { font: 500 64px/44px 'Inter Tight', sans-serif; letter-spacing: -1.92px; color: #06aef0; height: 69px; text-align: right; }
+.n { font: 500 64px/44px 'Saans', 'Heebo', sans-serif; letter-spacing: -1.92px; color: #06aef0; height: 69px; text-align: right; }
 .t { font-weight: 600; font-size: 24px; line-height: 32px; letter-spacing: -0.48px; margin-top: 10px !important; }
 .s { font-size: 20px; line-height: 32px; letter-spacing: -0.4px; color: #9b9b9b; text-align: right; margin-top: 12px !important; }
 </style>

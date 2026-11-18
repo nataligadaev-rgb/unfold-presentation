@@ -33,7 +33,7 @@ defineProps<{ kicker: string; title: string; sub?: string; crumb?: boolean }>()
 }
 .crumb b { font-weight: 700; }
 .ttl {
-  font: 700 40px/44px 'Inter Tight', sans-serif;
+  font: 700 40px/44px 'Saans', 'Heebo', sans-serif;
   letter-spacing: -0.8px;
   color: #000;
 }

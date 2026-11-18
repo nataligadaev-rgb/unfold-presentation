@@ -60,12 +60,12 @@ const DOT_GAP = CAP16 + 8.8
 .hax { position: absolute; left: 482px; top: 543.3px; width: 931.5px; border-top: 1px dashed #bcbcbc; }
 
 /* 20px labels: box = cap height (14.5px), text centred in it */
-.ax { position: absolute; height: 14.5px; display: flex; align-items: center; font: 400 20px/1 'Inter Tight', sans-serif; letter-spacing: -0.4px; white-space: nowrap; }
+.ax { position: absolute; height: 14.5px; display: flex; align-items: center; font: 400 20px/1 'Saans', 'Heebo', sans-serif; letter-spacing: -0.4px; white-space: nowrap; }
 .ax.grey { color: #9b9b9b; }
 .ax.rot { height: auto; transform: translate(-50%, -50%) rotate(-90deg); }
 
 /* 16px labels: 118px wide, centred over the dot */
-.lbl { position: absolute; width: 118px; height: 11.6px; display: flex; align-items: center; justify-content: center; font: 600 16px/1 'Inter Tight', sans-serif; letter-spacing: -0.32px; white-space: nowrap; }
+.lbl { position: absolute; width: 118px; height: 11.6px; display: flex; align-items: center; justify-content: center; font: 600 16px/1 'Saans', 'Heebo', sans-serif; letter-spacing: -0.32px; white-space: nowrap; }
 .lbl.he { font-family: 'Heebo', sans-serif; }
 .lbl.lone { width: auto; justify-content: flex-start; }
 .dot { position: absolute; width: 16px; height: 16px; display: block; }

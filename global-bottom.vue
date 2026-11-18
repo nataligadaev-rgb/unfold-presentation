@@ -28,6 +28,7 @@ watch(
 
 <style scoped>
 .gb {
+  font-family: 'Saans', 'Heebo', sans-serif;
   position: absolute;
   inset: 0;
   pointer-events: none;

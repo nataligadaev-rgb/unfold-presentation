@@ -42,7 +42,7 @@ const people = [
   display: flex;
   gap: 4px;
   align-items: baseline;
-  font: 400 24px/1 'Inter Tight', sans-serif;
+  font: 400 24px/1 'Saans', 'Heebo', sans-serif;
   letter-spacing: -0.48px;
   white-space: nowrap;
 }
@@ -63,7 +63,7 @@ const people = [
   position: absolute;
   left: 1364px;
   top: 738px;
-  font: 500 24px/44px 'Inter Tight', sans-serif;
+  font: 500 24px/44px 'Saans', 'Heebo', sans-serif;
   letter-spacing: -0.48px;
 }
 </style>

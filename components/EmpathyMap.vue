@@ -53,7 +53,7 @@ const order = (n: { x: number; y: number; q: Q }, i: number) => {
 .hline { position: absolute; left: 398px; top: 570px; width: 1124px; border-top: 1px dashed #b5b5b5; }
 .dring { position: absolute; left: 864px; top: 474px; width: 191px; height: 191px; }
 .face { position: absolute; left: 872px; top: 482px; width: 175px; height: 175px; border-radius: 50%; background-repeat: no-repeat; }
-.lab { position: absolute; font: italic 300 24px/44px 'Inter Tight', sans-serif; letter-spacing: -0.48px; color: #9b9b9b; }
+.lab { position: absolute; font: italic 300 24px/44px 'Saans', 'Heebo', sans-serif; letter-spacing: -0.48px; color: #9b9b9b; }
 .says { right: calc(1920px - 872px); top: 482px; }
 .does { right: calc(1920px - 878px); top: 648px; }
 .thinks { left: 1047px; top: 482px; }
