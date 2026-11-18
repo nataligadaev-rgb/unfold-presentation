@@ -36,7 +36,7 @@
 .l b { font-weight: 700; }
 .cut { position: absolute; left: 244px; top: 510px; width: 288px; border-top: 1px dashed #6a6a6a; }
 .sc { position: absolute; left: 532px; top: 494px; width: 32px; height: 32px; transform: rotate(180deg); }
-.scis { width: 32px; height: 32px; display: block; animation: scis-in 0.8s ease 0.2s both; }
+.scis { width: 32px; height: 32px; display: block; animation: scis-in 0.4s ease 0.1s both; }
 @keyframes scis-in { from { opacity: 0; } to { opacity: 1; } }
 .txt { position: absolute; right: 155px; top: 340px; width: 853px; font-size: 24px; line-height: 32px; letter-spacing: -0.48px; }
 .txt p + p { margin-top: 32px !important; }

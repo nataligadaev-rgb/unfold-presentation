@@ -13,7 +13,7 @@ defineProps<{
 }>()
 
 // the authored `at` values are in ms on a slow timeline; play it at this speed
-const K = 0.7
+const K = 0.35
 const t = (n: number) => Math.round(n * K)
 const uid = Math.random().toString(36).slice(2, 8)
 </script>
@@ -51,11 +51,11 @@ const uid = Math.random().toString(36).slice(2, 8)
 .wrap { position: absolute; inset: 0; }
 .lines { position: absolute; left: 0; top: 0; pointer-events: none; }
 .ln { fill: none; stroke: #4a4a4a; stroke-width: 1; stroke-dasharray: 4 4; }
-.grow { fill: none; stroke: #fff; stroke-width: 6; stroke-dasharray: 1; stroke-dashoffset: 1; animation: grow-line 0.55s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+.grow { fill: none; stroke: #fff; stroke-width: 6; stroke-dasharray: 1; stroke-dashoffset: 1; animation: grow-line 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
 @keyframes grow-line { to { stroke-dashoffset: 0; } }
 
 /* one calm entrance for every box: fade + a tiny settle, no scaling */
-.ent { opacity: 0; animation: flow-in 0.9s var(--ease) forwards; }
+.ent { opacity: 0; animation: flow-in 0.45s var(--ease) forwards; }
 @keyframes flow-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 @media print, (prefers-reduced-motion: reduce) {
   .ent { animation: none; opacity: 1; }

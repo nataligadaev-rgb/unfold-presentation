@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <SelectionBox :x="278" :y="329" :w="1355" :h="456" :delay="1300" />
+    <SelectionBox :x="285" :y="336" :w="1341" :h="442" :delay="1300" />
     <img class="cursor" src="/assets/cursor.png" alt="" />
   </div>
 </template>
@@ -44,7 +44,7 @@
   top: 785px;
   width: 36px;
   height: 36px;
-  animation: cursor-in 1.1s var(--ease) 1.4s both;
+  animation: cursor-in 0.55s var(--ease) 0.7s both;
 }
 @keyframes cursor-in {
   from { opacity: 0; transform: translate(40px, 30px); }

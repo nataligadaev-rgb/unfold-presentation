@@ -6,29 +6,30 @@ const handles = ['tl', 'tm', 'tr', 'ml', 'mr', 'bl', 'bm', 'br']
 
 <template>
   <div class="sel f" :style="{ left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px', '--d': delay ?? 0 }">
-    <i v-for="h in handles" :key="h" :class="h" />
+    <i v-for="h in handles" :key="h" :class="'h-' + h" />
   </div>
 </template>
 
 <style scoped>
 .sel {
   position: absolute;
-  border: 1px dashed #8d8d8d;
+  border: 1px dashed #59595b;
   pointer-events: none;
 }
+/* Figma handles: 13.8px white squares with a 1.25px #59595B border, centred on the dashed line */
 i {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   background: #fff;
-  border: 1px solid #7a7a7a;
+  border: 1.25px solid #59595b;
 }
-.tl { left: -6px; top: -6px; }
-.tm { left: calc(50% - 5px); top: -6px; }
-.tr { right: -6px; top: -6px; }
-.ml { left: -6px; top: calc(50% - 5px); }
-.mr { right: -6px; top: calc(50% - 5px); }
-.bl { left: -6px; bottom: -6px; }
-.bm { left: calc(50% - 5px); bottom: -6px; }
-.br { right: -6px; bottom: -6px; }
+.h-tl { left: -7.5px; top: -7.5px; }
+.h-tm { left: calc(50% - 7px); top: -7.5px; }
+.h-tr { right: -7.5px; top: -7.5px; }
+.h-ml { left: -7.5px; top: calc(50% - 7px); }
+.h-mr { right: -7.5px; top: calc(50% - 7px); }
+.h-bl { left: -7.5px; bottom: -7.5px; }
+.h-bm { left: calc(50% - 7px); bottom: -7.5px; }
+.h-br { right: -7.5px; bottom: -7.5px; }
 </style>

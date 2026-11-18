@@ -10,7 +10,7 @@ defineProps<{ kicker: string; title: string; sub?: string; crumb?: boolean }>()
     <template v-else>
       <p class="kick r trim" style="--d: 60">{{ kicker }}</p>
       <p class="ttl r trim" style="--d: 140">
-        {{ title }}<span v-if="sub" class="sub"> {{ sub }}</span>
+        {{ sub ? `${title} ${sub}` : title }}
       </p>
     </template>
   </div>
@@ -37,5 +37,4 @@ defineProps<{ kicker: string; title: string; sub?: string; crumb?: boolean }>()
   letter-spacing: -0.8px;
   color: #000;
 }
-.sub { color: #9b9b9b; }
 </style>

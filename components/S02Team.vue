@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const people = [
-  { name: 'Natali Gadaev', tilt: -4, photo: '/assets/team-natali.png', pos: 'center bottom', size: 'cover' },
+  { name: 'Natali Gadaev', tilt: -4, photo: '/assets/team-natali.png', pos: 'center', size: '100% 100%' },
   { name: 'Or Jhirad', tilt: 4, photo: '/assets/team-or.png', pos: '-12px -58.8px', size: '188px 247px' },
   { name: 'Yuval Koenig', tilt: -4, photo: '/assets/team-yuval.png', pos: 'center', size: 'cover' },
 ]
@@ -19,7 +19,7 @@ const people = [
       </div>
     </div>
 
-    <SelectionBox :x="570" :y="373" :w="781" :h="333" :delay="900" />
+    <SelectionBox :x="577" :y="380" :w="767" :h="320" :delay="900" />
     <img class="cursor" src="/assets/cursor.png" alt="" />
     <p class="keys f trim" style="--d: 1500">Ctrl / ⌘ + G</p>
   </div>
@@ -53,7 +53,7 @@ const people = [
   top: 697px;
   width: 36px;
   height: 36px;
-  animation: cursor-in 1.1s var(--ease) 1.1s both;
+  animation: cursor-in 0.55s var(--ease) 0.55s both;
 }
 @keyframes cursor-in {
   from { opacity: 0; transform: translate(40px, 30px); }

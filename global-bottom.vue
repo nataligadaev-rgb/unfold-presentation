@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, watch } from 'vue'
 import { useNav } from '@slidev/client'
 
 // One footer for the whole deck. It sits outside the slide transition, so it never
@@ -8,6 +8,14 @@ const { currentSlideRoute } = useNav()
 const fm = computed<Record<string, any>>(() => currentSlideRoute.value?.meta?.slide?.frontmatter ?? {})
 const mode = computed<string>(() => fm.value.footer ?? 'full')
 const dark = computed(() => !!fm.value.dark)
+
+// The slide transition briefly shows whatever sits behind the slide. Match it to the current slide's
+// own background (dark slides -> dark) so changing slides never flashes white between dark slides.
+watch(
+  dark,
+  (d) => document.documentElement.style.setProperty('--unfold-bg', d ? '#242424' : '#ffffff'),
+  { immediate: true, flush: 'sync' },
+)
 </script>
 
 <template>

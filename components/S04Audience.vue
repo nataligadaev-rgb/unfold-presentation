@@ -29,8 +29,8 @@
   padding: 40px;
   background: #f7f7f7;
   border-radius: 4px;
-  animation: u-rise 1s var(--ease) both;
-  animation-delay: calc(var(--d) * 0.85ms + 100ms);
+  animation: u-rise 0.5s var(--ease) both;
+  animation-delay: calc(var(--d) * 0.43ms + 50ms);
 }
 .t { font-weight: 800; font-size: 24px; line-height: 36px; letter-spacing: -0.48px; margin-bottom: 8px !important; }
 .bx { font-size: 20px; line-height: 32px; letter-spacing: -0.4px; }

@@ -28,7 +28,7 @@ export const col2: Comp[] = [
 export const col3: Comp[] = [
   { name: 'B2Cprint', desc: 'עיצוב והזמנת מוצרי דפוס', src: 'logo-b2cprint.png', border: true, bg: '#fff', img: { left: '5.88%', top: '25.61%', width: '100%', height: '48.77%' } },
   { name: 'PrintBlocks', desc: 'ניהול הזמנות ותהליכי ייצור', src: 'logo-printblocks.png', border: true, bg: '#fff', img: sq('17.81%', '8.52%', '70.13%') },
-  { name: 'דפוק בקליק', desc: 'פורטל בתי דפוס והשוואות מחיר', src: 'logo-dfus.png', border: true, he: true, img: sq('12.62%', '12.45%', '75.65%') },
+  { name: 'דפוס בקליק', desc: 'פורטל בתי דפוס והשוואות מחיר', src: 'logo-dfus.png', border: true, he: true, img: sq('12.62%', '12.45%', '75.65%') },
   { name: 'עותקים', desc: 'הזמנת הדפסות אונליין', src: 'logo-otkim.png', border: true, he: true, img: { left: '0', top: '22.58%', width: '100%', height: '54.84%' } },
   { name: 'איזיקופי', desc: 'העלאת קבצים, עיצוב והזמנה אונליין', src: 'logo-easycopy.png', border: true, he: true, img: { left: '10.29%', top: '14.71%', width: '79.41%', height: '70.59%' } },
 ]
