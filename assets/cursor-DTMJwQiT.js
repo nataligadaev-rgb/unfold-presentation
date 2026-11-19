@@ -1,0 +1,1 @@
+var e=`/unfold-presentation/assets/cursor.png`;export{e as t};

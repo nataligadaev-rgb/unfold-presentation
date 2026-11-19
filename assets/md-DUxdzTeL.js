@@ -1,0 +1,9 @@
+import{t as e}from"./StoryMap-Dqtoh922.js";import{E as t,R as n,S as r,X as i,_ as a,_t as o,ht as s,w as c}from"./modules/shiki-Dxb0epui.js";import{et as l,tt as u}from"./index-BRA119_B.js";import{t as d}from"./unfold-DBSwDhHX.js";var f=c({__name:`S23StoryMapPrintshop`,setup(t){let{$slidev:r,$nav:i,$clicksContext:o,$clicks:s,$page:c,$renderContext:l,$frontmatter:d}=u(),f=[{step:`תפעול בית הדפוס`,details:[`עדכון מלאי`,`הדלקה וכיבוי מדפסות`,`תיקון תקלות
+במידת הצורך`]},{step:`קבלת הזמנה`,details:[`מקבל התראה
+על הזמנה חדשה`,`צופה בפרטי ההזמנה`,`בודק סוג תוצר, כמות
+ומועד מבוקש`,`מוריד/פותח את הקובץ`]},{step:`בדיקת הקובץ`,details:[`בודק מידות ובליד`,`בודק רזולוציה וצבעים`,`מוודא התאמה
+לחומר ולגימור`,`מבקש תיקון
+במידת הצורך`]},{step:`בדיקת זמינות המדפסת`,details:[`בודק עומס הזמנות`,`בודק זמינות מכונות וחומרים`,`מעריך זמן ייצור`,`מאשר מועד אספקה`]},{step:`שליחה להדפסה
+ועדכון הלקוח`,details:[`מכין את הקובץ לייצור`,`משבץ את ההזמנה בתור`,`שולח להדפסה`]},{step:`גימור ההדפסה`,details:[`מבצע חיתוך וקיפול
+לפי הצורך`,`משלים כריכה או גימור`,`בודק את איכות התוצר`,`אורז את ההזמנה למסירה`]},{step:`הכנה לאיסוף
+ושליחת אישור`,details:[`מסמן שההזמנה מוכנה`,`שולח הודעה ללקוח`,`מציין פרטי איסוף`]},{step:`קבלת תשלום`,details:[`מציג את הסכום לתשלום`,`מאשר קבלת תשלום`,`מנפיק קבלה או חשבונית`,`מסמן את ההזמנה כנאספה`]}],p=[{label:`עבודה שגרתית`,span:1},{label:`תכנון ההדפסה`,span:1},{label:`בדיקת ההזמנה`,span:2},{label:`ביצוע ההדפסה`,span:2},{label:`מסירה וקבלת תשלום`,span:2}];return(t,r)=>{let i=e;return n(),a(i,{kicker:`Mapping`,title:`Story Map`,sub:`/ Printshop`,left:184,cols:f,activities:p,"step-color":`#cee8fc`,"detail-color":`#e9f9ff`,"plain-headers":``})}}}),p={__name:`slides.md__slidev_23`,setup(e){let{$slidev:c,$nav:p,$clicksContext:m,$clicks:h,$page:g,$renderContext:_,$frontmatter:v}=u();return m.setup(),(e,c)=>{let u=f;return n(),a(d,o(t(s(l)(s(v),22))),{default:i(()=>[r(u)]),_:1},16)}}};export{p as default};
