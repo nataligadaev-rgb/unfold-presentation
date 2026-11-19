@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // Screenshots the team collected of how students and print shops actually talk today.
 // i = how the picture is cropped inside its frame (taken from the Figma crop values).
-type Shot = { x: number; y: number; w: number; h: number; src: string; border?: boolean; i?: Record<string, string>; bar?: [number, number, number] }
+type Shot = { x: number; y: number; w: number; h: number; src: string; border?: boolean; i?: Record<string, string>; bar?: [number, number] }
 const shots: Shot[] = [
   { x: 542, y: 270, w: 230, h: 109, src: 'wf-93.png', border: true, i: { height: '178.1%', width: '100%', left: '0', top: '-0.04%' } },
   { x: 1139, y: 297, w: 258, h: 97, src: 'wf-92.png', border: true },
@@ -12,12 +12,13 @@ const shots: Shot[] = [
   { x: 1005, y: 785, w: 334, h: 169, src: 'wf-83.png', border: true, i: { height: '101.98%', width: '100%', left: '0', top: '-0.07%' } },
   { x: 1486, y: 479, w: 303, h: 230, src: 'wf-84.png', border: true },
   { x: 1415, y: 630, w: 225, h: 268, src: 'wf-87.png', border: true, i: { height: '107.63%', width: '108.45%', left: '-0.02%', top: '-7.63%' } },
-  // chat bubbles (a grey bar hides the sender)
-  { x: 833, y: 235, w: 244, h: 89, src: 'wf-2244.png', bar: [842.66, 242.24, 223] },
-  { x: 1266, y: 749, w: 262, h: 114, src: 'wf-2243.png', bar: [1275.66, 759.46, 52.3] },
-  { x: 657, y: 806, w: 244, h: 81, src: 'wf-2240.png', bar: [666.66, 817.27, 223] },
-  { x: 281, y: 297, w: 246, h: 82, src: 'wf-2238.png', bar: [290.66, 308.27, 223] },
-  { x: 1397, y: 217, w: 230, h: 77, src: 'wf-2241.png', bar: [1406.66, 227.46, 207.7] },
+  // chat bubbles: shown whole (frame height follows the picture's own proportions) and the sender row
+  // (name + phone number) is covered by a bar. bar = [top %, height %] of the bubble.
+  { x: 833, y: 235, w: 244, h: 100, src: 'wf-2244.png', bar: [8, 17] },
+  { x: 1266, y: 749, w: 262, h: 114, src: 'wf-2243.png', bar: [9, 14] },
+  { x: 657, y: 806, w: 244, h: 81, src: 'wf-2240.png', bar: [14, 17] },
+  { x: 281, y: 297, w: 246, h: 82, src: 'wf-2238.png', bar: [14, 17] },
+  { x: 1397, y: 217, w: 230, h: 76, src: 'wf-2241.png', bar: [11, 19] },
 ]
 </script>
 
@@ -38,7 +39,7 @@ const shots: Shot[] = [
         :class="{ fit: !s.i }"
         :style="s.i ? { position: 'absolute', maxWidth: 'none', ...s.i } : undefined"
       />
-      <i v-if="s.bar" class="bar" :style="{ left: s.bar[0] - s.x + 'px', top: s.bar[1] - s.y + 'px', width: s.bar[2] + 'px' }" />
+      <i v-if="s.bar" class="bar" :style="{ top: s.bar[0] + '%', height: s.bar[1] + '%' }" />
     </div>
     <p class="cap f" style="--d: 700" dir="rtl">קטלוג נייר</p>
 
@@ -70,8 +71,8 @@ const shots: Shot[] = [
 .shot { position: absolute; overflow: hidden; }
 .shot.bd { border: 1px solid #ededed; }
 .shot img { display: block; }
-.shot img.fit { width: 100%; height: 100%; object-fit: cover; object-position: bottom; }
-.bar { position: absolute; height: 12.9px; background: #ededed; }
+.shot img.fit { width: 100%; height: 100%; object-fit: fill; }
+.bar { position: absolute; left: 4%; width: 92%; background: #ededed; }
 .cap {
   position: absolute;
   left: 194px;

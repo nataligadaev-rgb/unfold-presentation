@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <SelectionBox :x="285" :y="336" :w="1341" :h="442" :delay="1300" />
+    <SelectionBox :x="285" :y="335" :w="1351" :h="454" :delay="1300" />
     <img class="cursor" src="/assets/cursor.png" alt="" />
   </div>
 </template>
@@ -40,8 +40,8 @@
 .lead { font-weight: 600; }
 .cursor {
   position: absolute;
-  left: 1625px;
-  top: 785px;
+  left: 1630px;
+  top: 790px;
   width: 36px;
   height: 36px;
   animation: cursor-in 0.55s var(--ease) 0.7s both;
